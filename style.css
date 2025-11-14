@@ -1,0 +1,324 @@
+/* css/style.css */
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0; 
+    font-family: Helvetica, Arial, sans-serif; 
+    color: #333; 
+    background-color: #fafafa; 
+    line-height: 1.6;
+}
+
+header { 
+    background-color: #222; 
+    color: white; 
+    padding: 30px 0; 
+    text-align: center; 
+}
+
+header h1 { 
+    margin: 0; 
+    font-size: 2.5em; 
+    font-weight: 300;
+}
+
+header p { 
+    margin: 10px 0 0; 
+    font-size: 1.1em; 
+    color: #ccc;
+}
+
+.nav { 
+    background-color: #333; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav a { 
+    display: block; 
+    color: #ddd; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover { 
+    background-color: #444; 
+    color: white; 
+}
+
+.container { 
+    max-width: 1200px; 
+    margin: 30px auto; 
+    padding: 0 20px; 
+}
+
+/* Search bar styles */
+.search-bar { 
+    text-align: center; 
+    margin: 40px 0; 
+}
+
+.search-bar input[type="text"], 
+.search-bar select {
+    padding: 12px 16px; 
+    font-size: 1em; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 200px;
+}
+
+.search-bar button {
+    padding: 12px 24px; 
+    font-size: 1em; 
+    border: none; 
+    border-radius: 4px; 
+    background-color: #5c6bc0;
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover { 
+    background-color: #3f51b5; 
+}
+
+/* Info boxes */
+.info-section { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+    margin-bottom: 50px; 
+}
+
+.info-box { 
+    flex: 1 1 30%; 
+    background-color: white; 
+    padding: 30px 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.info-box:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); 
+}
+
+.info-box h3 { 
+    margin-top: 0; 
+    font-size: 1.3em; 
+    color: #333;
+}
+
+.info-box p { 
+    font-size: 0.95em; 
+    line-height: 1.6em; 
+    color: #666; 
+}
+
+/* Carousel */
+.featured-section {
+    margin: 50px 0;
+}
+
+.carousel-container { 
+    margin: 30px 0; 
+    position: relative; 
+    overflow: hidden; 
+    padding: 10px 0;
+}
+
+.carousel-wrapper { 
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+    gap: 20px;
+}
+
+.protein-card { 
+    background-color: white; 
+    width: 280px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    text-align: center; 
+    flex-shrink: 0; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    overflow: hidden;
+}
+
+.protein-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); 
+}
+
+.protein-card img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #eee;
+}
+
+.protein-card h4 { 
+    margin: 15px 0 8px; 
+    font-size: 1.1em;
+    color: #333;
+    padding: 0 15px;
+}
+
+.protein-card p { 
+    margin: 0 15px 15px; 
+    font-size: 0.9em; 
+    color: #666; 
+}
+
+.carousel-controls { 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.carousel-btn { 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border: none; 
+    border-radius: 4px; 
+    background-color: #5c6bc0;
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-size: 0.95em;
+}
+
+.carousel-btn:hover { 
+    background-color: #3f51b5; 
+}
+
+.carousel-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Results container */
+#resultsContainer {
+    min-height: 200px;
+}
+
+/* Footer */
+footer { 
+    background-color: #222; 
+    color: #bbb; 
+    text-align: center; 
+    padding: 30px 0; 
+    margin-top: 50px;
+    font-size: 0.9em; 
+}
+
+footer a { 
+    color: #bbb; 
+    text-decoration: none; 
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover { 
+    color: white; 
+    text-decoration: underline; 
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) { 
+    .info-box { 
+        flex: 1 1 45%; 
+    } 
+    
+    .protein-card { 
+        width: 45%; 
+    } 
+    
+    .nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 600px) { 
+    .info-box { 
+        flex: 1 1 100%; 
+    } 
+    
+    .protein-card { 
+        width: 85%; 
+        margin: 0 7.5%; 
+    }
+    
+    .search-bar input[type="text"], 
+    .search-bar select { 
+        width: 100%; 
+        margin-bottom: 10px; 
+        margin-right: 0;
+    }
+    
+    .search-bar button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    .nav a {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #5c6bc0;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
