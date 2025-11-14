@@ -1,5 +1,5 @@
-// js/script.js
-const jsonDataUrl = "https://raw.githubusercontent.com/YOUR_USERNAME/dark-protein-database/main/data/proteins.json";
+// script.js - FOR GITHUB PAGES (ALL FILES IN ROOT)
+const jsonDataUrl = "https://raw.githubusercontent.com/YOUR_USERNAME/dark-protein-database/main/proteins.json";
 let proteinData = [];
 
 // Load data from JSON file
